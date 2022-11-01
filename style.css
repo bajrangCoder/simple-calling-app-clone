@@ -1,0 +1,312 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+  min-width: 100vw;
+}
+.container{
+  height: 100%;
+  width: 100%;
+  background: white;
+}
+.appNavbar{
+  position: fixed;
+  top: 10px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  background: #E0E2F6;
+}
+.appNavbar ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.appNavbar ul li:nth-child(2) input{
+  border: none;
+  outline: none;
+  background: #E0E2F6;
+  color: #000;
+  padding: 5px;
+  height: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  width: 100%;
+}
+.appNavbar ul li img{
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+}
+.appNavbar ul li{
+  padding: 5px;
+  transition: 0.5s ease;
+}
+.appNavbar ul li:nth-child(1):hover{
+  background: #C1C2CE;
+  border-radius: 50%;
+}
+.appNavbar ul li:nth-child(3):hover{
+  background: #C1C2CE;
+  border-radius: 50%;
+}
+.appNavbar ul li:nth-child(4):hover{
+  background: #C1C2CE;
+  border-radius: 50%;
+}
+
+.recentTabCont{
+  width: 100%;
+  height: 530px;
+  position: relative;
+  top: 5rem;
+  overflow-y: scroll;
+}
+.recentTabCont .callSection{
+  padding: 15px;
+}
+.recentTabCont .callSection h2{
+  font-size: 13px;
+  font-weight: 600;
+  color: #000;
+  margin: 10px;
+}
+.recentTabCont .callSection ul{
+  list-style: none;
+  margin-bottom: 90px;
+}
+.recentTabCont .callSection ul li{
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.recentTabCont .callSection ul li .dot{
+  padding-top: 8px;
+  border-radius: 50%;
+  height: 50px;
+  width: 70px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+}
+.recentTabCont .callSection ul li .detail{
+  width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.recentTabCont .callSection ul li .detail h2{
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.recentTabCont .callSection ul li .detail .timing {
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-left: 9px;
+}
+.recentTabCont .callSection ul li .detail .provider {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-left: 9px;
+  color: #6149C3;
+}
+.recentTabCont .callSection ul li .callBtn{
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+}
+.recentTabCont .callSection ul li .callBtn:hover{
+  background: rgba(215, 215, 215, 1);
+  border-radius: 50%;
+  transition: 0.5s ease;
+}
+
+.favouriteTabCont{
+  width: 100%;
+  height: 530px;
+  position: relative;
+  top: 5rem;
+  overflow-y: scroll;
+  display: none;
+  padding: 15px;
+}
+.favouriteTabCont h2{
+  font-size: 13px;
+  font-weight: 600;
+  color: #000;
+  margin: 10px;
+}
+.favouriteTabCont ul{
+  list-style: none;
+  margin-bottom: 90px;
+}
+.favouriteTabCont ul li{
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding: 7px;
+}
+.favouriteTabCont ul li:hover{
+  background: rgba(221, 219, 219, 1);
+  transition: 0.5s ease;
+}
+.favouriteTabCont ul li .dot{
+  padding-top: 8px;
+  border-radius: 50%;
+  height: 50px;
+  width: 70px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+}
+.favouriteTabCont ul li .detail{
+  width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.favouriteTabCont ul li .detail h2{
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.favouriteTabCont ul li .detail .timing {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-left: 9px;
+}
+.favouriteTabCont ul li .callBtn{
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  margin-right: 5px;
+}
+.favouriteTabCont ul li .callBtn:hover{
+  background: rgba(215, 215, 215, 1);
+  border-radius: 50%;
+  transition: 0.5s ease;
+}
+
+.contactTabCont{
+  width: 100%;
+  height: 530px;
+  position: relative;
+  top: 5rem;
+  overflow-y: scroll;
+  display: none;
+  padding: 15px;
+}
+.contactTabCont .createNewCont{
+  font-size: 18px;
+  font-weight: 400;
+  color: dodgerblue;
+  margin: 10px;
+  text-align: center;
+  padding: 10px;
+}
+.contactTabCont .createNewCont:hover{
+  background: rgba(221, 219, 219, 1);
+  transition: 0.5s ease;
+}
+.contactTabCont ul{
+  list-style: none;
+  margin-bottom: 90px;
+}
+.contactTabCont ul li{
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.contactTabCont ul li:hover{
+  background: rgba(221, 219, 219, 1);
+  transition: 0.5s ease;
+}
+.contactTabCont ul li .circle {
+  padding-top: 8px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+  background: red;
+}
+.contactTabCont ul li h2{
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  margin-left: 7px;
+}
+
+.dialer{
+  position: absolute;
+  bottom: 100px;
+  right: 20px;
+  background: #00B4FF;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 0 #E9E9E9;
+}
+.dialer img{
+  height: 30px;
+  width: 30px;
+}
+
+.appFooter{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background: #E0E2F6;
+  border-top: 1px solid #F4F5FF;
+}
+.appFooter ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.appFooter ul li{
+  padding: 5px;
+}
+
+.appFooter ul li img{
+  width: 50px;
+  height: 30px;
+  padding: 5px;
+}
+.appFooter ul li p{
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+.appFooter ul li img:hover{
+  background: #80C5FF;
+  border-radius: 30px;
+  padding: 5px;
+  transition: 0.5s ease;
+}
+.active{
+  background: #80C5FF;
+  border-radius: 30px;
+  padding: 5px;
+  transition: 0.5s ease;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Clonning Contact App</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <nav class="appNavbar">
+      <ul>
+        <li><img class="searchIcon" src="icons/search.svg" /></li>
+        <li><input class="searchInputbox" type="text" name="contactName" id="contactName" placeholder="Search contacts & places" onchange="searchContact(this.value)"/></li>
+        <li><img class="microphoneIcon" src="icons/microphone.svg" /></li>
+        <li><img class="threeDotIcon" src="icons/threeDots.svg" /></li>
+      </ul>
+    </nav>
+    <div class="recentTabCont">
+      <div class="callSection">
+        <h2>Recents Calls</h2>
+        <ul id="recentCallUl">
+        </ul>
+      </div>
+    </div>
+    <div class="favouriteTabCont">
+      <h2>Favorite Contacts</h2>
+      <ul id="favCallUl">
+      </ul>
+    </div>
+    <div class="contactTabCont">
+      <h2 class="createNewCont">Create new contact</h2>
+      <ul id="allcontactUl">
+      </ul>
+    </div>
+    <div class="dialer"><img src="icons/hashtag.svg" /></div>
+    <footer class="appFooter">
+      <ul>
+        <li>
+          <a onclick="changeTab('favTab')">
+            <img class="favImg" src="icons/favorite.svg" />
+            <p>Favorites</p>
+          </a>
+        </li>
+        <li>
+          <a onclick="changeTab('resTab')">
+            <img class="resImg active" src="icons/recents.svg" />
+            <p>Recents</p>
+          </a>
+        </li>
+        <li>
+          <a onclick="changeTab('contTab')">
+            <img class="contImg" src="icons/contacts.svg" />
+            <p>Contacts</p>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
